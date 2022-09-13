@@ -1,0 +1,34 @@
+HOME
+  <title>Productora de eventos - Ramiro Producciones</title>
+
+  <meta name="description" content="Organización exclusiva para reuniones sociales: fiestas, celebraciones empresariales y/o corporativas, 15 años, casamientos, día del niño, fin de año. Llámanos." />
+
+  <meta name="keywords"
+    content="eventos sociales, cumpleaños, despedidas, egresados, fantasía, sueños, productora" />
+
+--------------------------------------------------------------------------
+SERVICIOS
+  <title>Servicios, tenemos para vos - Ramiro Producciones</title>
+
+  <meta name="description" content="Contamos con recursos exclusivos para hacer la fiesta de tus sueños realidad" />
+
+  <meta name="keywords"
+    content="disc jokey, música, shows, iluminación, efectos especiales, ambientación, juegos, servicios" />
+
+--------------------------------------------------------------------------
+AGENCIA
+  <title>Agencia, nosotros somos - Ramiro Producciones</title>
+
+  <meta name="description" content="Atención personalizada, ponemos todos nuestros recursos, humanos y materiales, para cumplir tus fantasías" />
+
+  <meta name="keywords"
+    content="estilo, responsabilidad, compromiso, seriedad, creatividad, imaginación, agencia" />
+
+--------------------------------------------------------------------------
+CONTACTO
+  <title>Contacto, saber mas - Ramiro Producciones</title>
+
+  <meta name="description" content="Consultá disponibilidad y precios, la mejor tarifa del mercado y a tu medida, mejoramos cualquier presupuesto, no dudes más, llámanos yá." />
+
+  <meta name="keywords"
+    content="mejor precio, barato, económico, presupuesto, contacto" />

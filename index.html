@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="es-ES">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="./images/icono(svg144x144).svg" type="image/svg" />
+    <title>Productora de eventos - Ramiro Producciones</title>
+    <meta name="author" content="DMRS" />
+    <meta
+      name="description"
+      content="Organización exclusiva para reuniones sociales: fiestas, celebraciones empresariales y/o corporativas, 15 años, casamientos, día del niño, fin de año. Llámanos."
+    />
+    <meta
+      name="keywords"
+      content="eventos sociales, cumpleaños, despedidas, egresados, fantasía, sueños, productora"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+      integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+      integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N"
+      crossorigin="anonymous"
+    />
+    <!-- <link rel="stylesheet" href="./css/bootstrap.min.css"> -->
+    <!-- <link rel="stylesheet" href="./css/bootstrap-multiselect.min.css"> -->
+    <link rel="stylesheet" href="./css/estilos.css" type="text/css" />
+  </head>
+
+  <body class="home">
+    <audio id="hreproductor" autoplay loop>
+      Su navegador no soporta algunos formatos de audio
+      <source src="./music/electronica-edm.ogg" type="audio/ogg" />
+    </audio>
+    <button
+      type="submit"
+      class="silencio"
+      alt="silenciar sonido"
+      onclick="mute()"
+    >
+      <i class="fa-sharp fa-solid fa-volume-xmark"></i>
+    </button>
+    <script>
+      function mute() {
+        var aud = document.getElementById("hreproductor");
+        if (aud.muted == false) {
+          aud.muted = true;
+        } else {
+          aud.muted = false;
+        }
+      }
+    </script>
+    <header
+      class="header d-flex justify-content-center flex-column-reverse align-items-center flex-md-column"
+    >
+      <div class="encabezado">
+        <img
+          src="./images/logo.gif"
+          alt="logo dj ramiro producciones"
+          class="logo"
+        />
+        <h1 class="titulo">Ramiro Producciones</h1>
+      </div>
+      <nav class="nav navbar navbar-expand-md navbar-dark">
+        <button
+          id="btnav"
+          class="navbar-toggler ml-auto"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div
+          class="collapse navbar-collapse d-md-flex justify-content-around"
+          id="navbarNav"
+        >
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" href="./index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./pages/servicios.html">Servicios</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./pages/agencia.html">Agencia</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./pages/contacto.html">Contacto</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <main
+      class="main d-flex flex row align-items-center justify-content-center container-fluid"
+    >
+      <div id="carousel" class="carousel slide" data-ride="carousel">
+        <ul class="carousel-indicators">
+          <li data-target="#carousel" data-slide-to="0" class="active"></li>
+          <li data-target="#carousel" data-slide-to="1"></li>
+          <li data-target="#carousel" data-slide-to="2"></li>
+        </ul>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="./images/canon.png" alt="RobotLed" />
+            <!-- <div class="carousel-caption">
+          <h3>TU FIESTA</h3>
+          <p>La que siempre soñaste</p>
+        </div> -->
+          </div>
+          <div class="carousel-item">
+            <img src="./images/canon1.png" alt="RobotLed1" />
+          </div>
+          <div class="carousel-item">
+            <img src="./images/canon2.png" alt="RobotLed2" />
+          </div>
+        </div>
+        <a class="carousel-control-prev" href="#carousel" data-slide="prev">
+          <span class="carousel-control-prev-icon"></span>
+        </a>
+        <a class="carousel-control-next" href="#carousel" data-slide="next">
+          <span class="carousel-control-next-icon"></span>
+        </a>
+      </div>
+      <div class="marquesina position-absolute">
+        <marquee id="marq1" behavior="alternate" direction="down">
+          <marquee behavior="alternate" scrollamount="12" scrolldelay="100">
+            <strong>SÓLO PENSAMOS EN CÓMO</strong>
+          </marquee>
+        </marquee>
+        <marquee id="marq2" behavior="alternate" direction="down">
+          <marquee behavior="alternate" scrollamount="14" scrolldelay="100">
+            <strong>TU FIESTA SERÁ ÚNICA!!!</strong>
+          </marquee>
+        </marquee>
+        <marquee id="marq3" behavior="alternate" direction="down">
+          <marquee behavior="alternate" scrollamount="10" scrolldelay="100">
+            <strong>NO TE LO PODÉS PERDER</strong>
+          </marquee>
+        </marquee>
+      </div>
+    </main>
+    <footer class="footer container-fluid">
+      <div class="cierre">
+        <p>
+          No busques más, tenemos tu solución<br />con increibles servicios y
+          facilidades de pago
+        </p>
+      </div>
+      <div class="redes">
+        <a
+          href="https://www.youtube.com/channel/UCy_nXlltVL_Nfp0CvFLyLNg"
+          title="sitio youtube"
+          target="_blank"
+          rel="noopener noreferrer"
+          ><i class="fa-brands fa-youtube"></i
+        ></a>
+        <a
+          href="https://www.instagram.com/accounts/login/?next=/djramiroeventos/"
+          title="sitio instagram"
+          target="_blank"
+          rel="noopener noreferrer"
+          ><i class="fa-brands fa-instagram"></i
+        ></a>
+        <a
+          href="https://www.facebook.com/ramiro.palacios.568847"
+          title="sitio facebook"
+          target="_blank"
+          rel="noopener noreferrer"
+          ><i class="fa-brands fa-facebook"></i
+        ></a>
+        <a
+          href="https://api.whatsapp.com/message/RMH3JLHXWLBWC1?autoload=1&app_absent=0"
+          id="whatsapp"
+          title="sitio whatsapp"
+          target="_blank"
+          rel="noopener noreferrer"
+          ><i class="fa-brands fa-whatsapp" alt="icono whatsapp"></i
+        ></a>
+      </div>
+      <div class="derechos">
+        <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">
+          <img
+            alt="Creative Commons License"
+            style="border-width: 0"
+            src="https://i.creativecommons.org/l/by/4.0/88x31.png"
+          />
+          Licencia Internacional Creative Commons Attribution 4.0
+        </a>
+      </div>
+    </footer>
+    <script
+      src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+      integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js"
+      integrity="sha384-+sLIOodYLS7CIrQpBjl+C7nPvqq+FbNUBDunl/OZv93DB7Ln/533i8e/mZXLi/P+"
+      crossorigin="anonymous"
+    ></script>
+    <!-- <link rel="stylesheet" href="./js/bootstrap.min.js"> -->
+  </body>
+</html>
