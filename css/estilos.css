@@ -211,7 +211,7 @@ span.navbar-toggler-icon {
 .slide img {
   width: 100%;
   height: 75vh;
-  object-fit: cover;
+  object-fit: contain;
 }
 
 .marquesina {
