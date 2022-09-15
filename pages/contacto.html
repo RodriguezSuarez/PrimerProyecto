@@ -23,7 +23,6 @@
   <!-- <link rel="stylesheet" href="../css/bootstrap.min.css"> -->
   <!-- link pagina bootstrap-multiselect.min.css -->
   <!-- <link rel="stylesheet" href="../css/bootstrap-multiselect.min.css"> -->
-  <!--link pagina estilos.css-->
   <link rel="stylesheet" href="../css/estilos.css" type="text/css" />
 </head>
 
@@ -32,8 +31,6 @@
     <source src="../music/electronica-futuro_de_la_tecnologia.ogg" type="audio/ogg" />
     su navegador no soporta algunos formatos de audio
   </audio>
-  <button type="submit" class="silencio" alt="silenciar sonido" onclick="mute()"><i
-      class="fa-sharp fa-solid fa-volume-xmark"></i></button>
   <script>
     function mute() {
       var aud = document.getElementById("creproductor");
@@ -41,6 +38,8 @@
       else { aud.muted = false }
     }
   </script>
+  <button type="submit" class="silencio" alt="silenciar sonido" onclick="mute()"><i
+      class="fa-sharp fa-solid fa-volume-xmark"></i></button>
 
   <header class="header d-flex justify-content-center flex-column-reverse align-items-center flex-md-column">
     <div class="encabezado container-fluid">
@@ -81,14 +80,14 @@
           equipamiento - vajilla - gazebos - carpas - sillas y mesas - decoración - y mucho más</p>
       </article>
     </section>
-    <form action="" method="post" enctype="text/plain" name="form-evento" class="form form1 col-xs-12 col-md-6" netlify>
-      <!--enviar.php o netlifly-->
+    <form action="" method="post" enctype="text/plain" name="form-evento" id="form-evento"
+      class="form form1 col-xs-12 col-md-6" data-netlify="true">
       <fieldset class="fieldset fieldset1 from-group">
         <legend class="legend"><strong>Evento</strong></legend>
         <div class="form-row">
           <div class="col">
             <label for="tipo">Tipo de evento:</label>
-            <select class="select form-control" name="tipo" id="tipo">
+            <select class="select form-control" name="tipo[]" id="tipo">
               <option class="option" value="15/18años">15/18 años</option>
               <option class="option" value="despedida">Despedida</option>
               <option class="option" value="egresado">Egresado</option>
@@ -103,8 +102,8 @@
         </div>
         <div class="form-row">
           <div class="col">
-            <label for="hora">Tiempo del evento:</label>
-            <select class="select form-control" name="tiempo" id="tiempo">
+            <label for="tiempo">Tiempo del evento:</label>
+            <select class="select form-control" name="tiempo[]" id="tiempo">
               <option class="option" value="noche">Noche</option>
               <option class="option" value="tarde">Tarde</option>
               <option class="option" value="mañana">Mañana</option>
@@ -117,7 +116,7 @@
           </div>
         </div>
         <label for="sitio">Espacio del evento:</label>
-        <select class="select form-control" name="espacio" id="espacio">
+        <select class="select form-control" name="espacio[]" id="espacio">
           <option class="option" value="interior">Interior</option>
           <option class="option" value="exterior">Exterior</option>
           <option class="option" value="ambos">Ambos</option>
@@ -127,25 +126,27 @@
         <br>
         <div class="ServiciosEvento">
           <div class="checkbox form-check form-check-inline">
-            <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
+            <input class="form-check-input" type="checkbox" name="show's" id="inlineCheckbox1" value="option1">
             <label class="form-check-label" for="inlineCheckbox1">Show's</label>
           </div>
           <div class="checkbox form-check form-check-inline">
-            <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
+            <input class="form-check-input" type="checkbox" name="entretenimientos" id="inlineCheckbox1"
+              value="option1">
             <label class="form-check-label" for="inlineCheckbox1">Entretenimientos</label>
           </div>
           <div class="checkbox form-check form-check-inline">
-            <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
+            <input class="form-check-input" type="checkbox" name="ambientacion" id="inlineCheckbox1" value="option1">
             <label class="form-check-label" for="inlineCheckbox1">Ambientación</label>
           </div>
           <div class="checkbox form-check form-check-inline">
-            <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
+            <input class="form-check-input" type="checkbox" name="sonido" id="inlineCheckbox1" value="option1">
             <label class="form-check-label" for="inlineCheckbox1">Sonido</label>
           </div>
         </div>
       </fieldset>
     </form>
-    <form action="" method="post" enctype="text/plain" name="form-contacto" class="form form1 col-xs-12 col-md-6" netlify>
+    <form action="" method="post" enctype="text/plain" name="form-contacto" id="form-contacto"
+      class="form form1 col-xs-12 col-md-6" netlify>
       <!--enviar.php o netlifly-->
       <fieldset class="fieldset fieldset1 from-group">
         <legend class="legend"><strong>Interesado</strong></legend>
